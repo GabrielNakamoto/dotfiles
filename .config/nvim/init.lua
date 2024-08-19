@@ -1,36 +1,7 @@
--- vim.g.python3_host_prog = '/usr/local/bin/python3'  -- or the path to your Python 3 executable
 require('plugins')
 require('remap')
 require('lsp')
 require('settings')
--- require('mylsp')
--- require('nvimcmp')
--- lualine
--- vim.g.fzf_vim = {}
--- vim.g.fzf_vim.preview_window = {}
-
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>f', builtin.find_files, {})
-vim.keymap.set('n', '<leader>nw', function()
-    vim.cmd('vsplit')
-    builtin.find_files()
-end, {})
-vim.keymap.set('n', '<leader>ts', builtin.treesitter, {})
-
--- vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
--- vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
--- vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
-
-require('nvim-tmux-navigation').setup {
-    keybindings = {
-        left = "<C-h>",
-        down = "<C-j>",
-        up = "<C-k>",
-        right = "<C-l>",
-        last_active = "<C-\\>",
-        next = "<C-Space>",
-    }
-}
 
 -- local function maximize_status()
 --   return vim.t.maximized and '   ' or ''
@@ -67,7 +38,6 @@ vim.cmd([[
 
 require('nvim-autopairs').setup {}
 
-
 -- Enable Gruvbox theme
 vim.cmd('syntax enable')
 vim.cmd('colorscheme gruvbox')
@@ -89,6 +59,4 @@ require'nvim-treesitter.configs'.setup {
     enable = true
   }
 }
-
--- local lspconfig = require('lspconfig')
 

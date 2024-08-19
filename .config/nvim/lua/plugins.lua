@@ -3,7 +3,6 @@ return require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
 	use 'tikhomirov/vim-glsl'
 	use 'ThePrimeagen/vim-be-good'
-	-- use 'morhetz/gruvbox'
 	use "ellisonleao/gruvbox.nvim"
 	use 'windwp/nvim-autopairs'
 	use 'tpope/vim-commentary'
@@ -13,16 +12,12 @@ return require('packer').startup(function()
       'declancm/maximize.nvim',
       config = function() require('maximize').setup() end
     }
-    	-- use 'junegunn/fzf'
-	-- use 'junegunn/fzf.vim'
     use {
       'nvim-telescope/telescope.nvim', tag = '0.1.8',
     -- or                            , branch = '0.1.x',
       requires = { {'nvim-lua/plenary.nvim'} }
     }
-
     use 'eandrju/cellular-automaton.nvim'
-
 	use 'ntpeters/vim-better-whitespace'
   	use
 	{

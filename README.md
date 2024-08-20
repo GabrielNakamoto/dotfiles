@@ -10,5 +10,3 @@
 - [tmux](https://github.com/tmux/tmux?tab=readme-ov-file#installation)
     - [tpm](https://github.com/tmux-plugins/tpm?tab=readme-ov-file#installation)
 - GNU stow _'brew install stow'_
-
-// ## Installation

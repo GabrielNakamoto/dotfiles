@@ -38,6 +38,10 @@ vim.cmd([[
 
 require('nvim-autopairs').setup {}
 
+-- VimTex
+vim.g.vimtex_view_method = 'skim'
+vim.g.vimtex_compiler_method = 'latexmk'
+
 -- Enable Gruvbox theme
 vim.cmd('syntax enable')
 vim.cmd('colorscheme gruvbox')

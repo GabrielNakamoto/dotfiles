@@ -1,6 +1,7 @@
 return require('packer').startup(function()
 
 	use 'wbthomason/packer.nvim'
+    use 'lervag/vimtex'
 	use 'tikhomirov/vim-glsl'
 	use 'ThePrimeagen/vim-be-good'
 	use "ellisonleao/gruvbox.nvim"

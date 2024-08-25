@@ -1,0 +1,11 @@
+shift + lcmd - space : yabai -m window --toggle zoom-fullscreen
+
+shift + lcmd - h : yabai -m window --focus west
+shift + lcmd - l : yabai -m window --focus east
+shift + lcmd - k : yabai -m window --focus north
+shift + lcmd - j : yabai -m window --focus south
+
+shift + lcmd - t : yabai -m window --toggle float;\
+          yabai -m window --grid 4:4:1:1:2:2
+
+shift + lcmd -r : yabai -m space --rotate 90

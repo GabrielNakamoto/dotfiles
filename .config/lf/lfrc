@@ -1,0 +1,13 @@
+# Set the EDITOR environment variable
+set EDITOR nvim
+
+# Define a custom 'open' command
+cmd open ${{
+    case $(file --mime-type "$f" -bL) in
+        text/*|application/json) $EDITOR "$f";;
+        *) xdg-open "$f" ;;
+    esac
+}}
+
+# Map the enter key to the open command
+map <enter> open

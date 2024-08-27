@@ -23,14 +23,7 @@ set('n', '<leader>nw', function()
     vim.cmd('vsplit')
     builtin.find_files()
 end, {})
-set('n', '<leader>ts', builtin.treesitter, {})
-
--- old FuzzyFinding
--- set("n", "<leader>ff", ":Files<cr>", ns)
--- set("n", "<leader>nw", ":vsplit<CR>:Files<CR>", ns)
--- set("n", "<leader>fl", ":Lines<cr>", ns)
--- set("n", "<leader>ch", ":History:<cr>", ns)
--- set("n", "<leader>gc", ":vsplit<CR><C-w>|:Commits<CR>", ns)
+set("n", "lg", builtin.live_grep, {})
 
 -- window navigation (including tmux)
 require('nvim-tmux-navigation').setup {

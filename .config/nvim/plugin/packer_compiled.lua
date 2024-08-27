@@ -125,6 +125,11 @@ _G.packer_plugins = {
     path = "/Users/gabrielnakamoto/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "/Users/gabrielnakamoto/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
+    url = "https://github.com/windwp/nvim-ts-autotag"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/gabrielnakamoto/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -174,6 +179,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/gabrielnakamoto/.local/share/nvim/site/pack/packer/start/vim-glsl",
     url = "https://github.com/tikhomirov/vim-glsl"
+  },
+  vimtex = {
+    loaded = true,
+    path = "/Users/gabrielnakamoto/.local/share/nvim/site/pack/packer/start/vimtex",
+    url = "https://github.com/lervag/vimtex"
   }
 }
 

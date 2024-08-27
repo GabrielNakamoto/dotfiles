@@ -3,7 +3,7 @@ require("mason-lspconfig").setup({
 	ensure_installed = {
 		"clangd",
 		"lua_ls",
-        "glsl_analyzer"
+        "tsserver"
 	}
 })
 
@@ -38,7 +38,7 @@ require("lspconfig").lua_ls.setup {
 	on_attach = on_attach
 }
 
-require("lspconfig").glsl_analyzer.setup {
+require("lspconfig").tsserver.setup {
     on_attach = on_attach
 }
 

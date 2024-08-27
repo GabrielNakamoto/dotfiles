@@ -1,5 +1,6 @@
 return require('packer').startup(function()
 
+    use 'windwp/nvim-ts-autotag'
 	use 'wbthomason/packer.nvim'
     use 'lervag/vimtex'
 	use 'tikhomirov/vim-glsl'

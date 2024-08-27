@@ -3,10 +3,6 @@ require('remap')
 require('lsp')
 require('settings')
 
--- local function maximize_status()
---   return vim.t.maximized and '   ' or ''
--- end
-
 require('lualine').setup{
 sections = {
     lualine_a = {'mode'},
@@ -16,7 +12,6 @@ sections = {
       function()
         return vim.fn['nvim_treesitter#statusline'](180)
       end},
-    -- lualine_c = { maximize_status },
     lualine_x = {'encoding', 'fileformat', 'filetype'},
     lualine_y = {'progress'},
     lualine_z = {'location'}

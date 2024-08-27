@@ -9,8 +9,8 @@ size = 16
 family = "MesloLGS Nerd Font Mono"
 
 [window]
-#blur = true
-#opacity = 0.65
+blur = true
+opacity = 0.75
 padding.x = 10
 padding.y = 10
 

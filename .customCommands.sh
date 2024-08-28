@@ -1,6 +1,6 @@
 #!/bin/bash
  function fpro(){
-     local LOCAL_PATH="$HOME/Desktop/Workspace"
+     local LOCAL_PATH="$HOME/Desktop/Home"
      cd "$LOCAL_PATH"
      local selected=$(find . -maxdepth 2 -type d | fzf --tmux 80%,80% )
      cd $OLDPWD

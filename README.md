@@ -14,4 +14,4 @@
 - [yabai](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release))
     - Make sure to change [these](https://github.com/koekeishiya/yabai/wiki#installation-requirements) settings if on mac
 - [skhd](https://github.com/koekeishiya/skhd?tab=readme-ov-file#install)
-- [lazygit](https://github.com/koekeishiya/skhd?tab=readme-ov-file#install)
+- [lazygit](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#homebrew)

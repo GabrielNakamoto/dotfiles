@@ -13,6 +13,9 @@ set("v", "jk", "<Esc>", ns)
 -- toggle fullscreen window
 set("n", "<leader>z", ":Maximize<CR>", ns)
 
+-- LazyGit
+set("n", "gg", "<cmd>LazyGit<CR>", ns)
+
 -- new fuzzy-finding
 
 local builtin = require('telescope.builtin')

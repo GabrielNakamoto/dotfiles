@@ -1,6 +1,14 @@
 return require('packer').startup(function()
 
     use 'windwp/nvim-ts-autotag'
+    -- nvim v0.7.2
+    use({
+        "kdheepak/lazygit.nvim",
+        -- optional for floating window border decoration
+        requires = {
+            "nvim-lua/plenary.nvim",
+        },
+    })
 	use 'wbthomason/packer.nvim'
     use 'lervag/vimtex'
 	use 'tikhomirov/vim-glsl'

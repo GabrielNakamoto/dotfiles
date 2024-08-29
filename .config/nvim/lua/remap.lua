@@ -6,6 +6,9 @@ local ns = { noremap = true, silent = true }
 
 g.mapleader = " "
 
+-- build project
+set("n", "<leader>b", "<cmd>Make!<cr>", ns)
+
 -- return to normal mode
 set("i", "jk", "<Esc>", ns)
 set("v", "jk", "<Esc>", ns)
@@ -14,7 +17,7 @@ set("v", "jk", "<Esc>", ns)
 set("n", "<leader>z", ":Maximize<CR>", ns)
 
 -- LazyGit
-set("n", "gg", "<cmd>LazyGit<CR>", ns)
+set("n", "git", "<cmd>LazyGit<CR>", ns)
 
 -- new fuzzy-finding
 
@@ -26,7 +29,7 @@ set('n', '<leader>nw', function()
     vim.cmd('vsplit')
     builtin.find_files()
 end, {})
-set("n", "lg", builtin.live_grep, {})
+-- set("n", "", builtin.live_grep, {})
 
 -- window navigation (including tmux)
 require('nvim-tmux-navigation').setup {

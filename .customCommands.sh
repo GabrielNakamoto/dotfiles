@@ -14,7 +14,7 @@
 
 
 function nf(){
-    local selected=$(fd . --type f --strip-cwd-prefix | fzf --tmux 80%,80% )
+    local selected=$(fd . -H --type f --strip-cwd-prefix | fzf --tmux 80%,80% )
     # local selected=$(fzf --tmux 80%,80% )
     if [ "$selected" != "" ]; then
         nvim $selected

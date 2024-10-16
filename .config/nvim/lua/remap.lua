@@ -6,6 +6,8 @@ local ns = { noremap = true, silent = true }
 
 g.mapleader = " "
 
+vim.keymap.set("n", "<leader>m", "<cmd>Dispatch! g++ -std=c++11 % -o out<CR>", ns)
+
 -- build project
 set("n", "<leader>b", "<cmd>Make!<cr>", ns)
 
@@ -19,6 +21,10 @@ set("n", "<leader>z", ":Maximize<CR>", ns)
 -- LazyGit
 set("n", "git", "<cmd>LazyGit<CR>", ns)
 
+set("n", "<leader>rs",
+    "<cmd>Dispatch! rsync -azP ~/Desktop/Home/Projects/fire-web-testing/ root@68.183.202.160:fire-web-testing/<CR>",
+    ns);
+
 -- new fuzzy-finding
 
 local builtin = require('telescope.builtin')
@@ -29,7 +35,7 @@ set('n', '<leader>nw', function()
     vim.cmd('vsplit')
     builtin.find_files()
 end, {})
--- set("n", "", builtin.live_grep, {})
+set("n", "gl", builtin.live_grep, {})
 
 -- window navigation (including tmux)
 require('nvim-tmux-navigation').setup {
@@ -44,7 +50,7 @@ require('nvim-tmux-navigation').setup {
 }
 
 -- make it rain
-set("n", "<leader>rain", ":CellularAutomaton make_it_rain<CR>", ns)
+-- set("n", "<leader>rain", ":CellularAutomaton make_it_rain<CR>", ns)
 
 -- quitting keymaps
 set("n", "<leader>e", ":wq!<CR>", ns)
